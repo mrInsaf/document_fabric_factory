@@ -52,7 +52,7 @@ async def startup():
     await init_db()
 
 
-@app.post("/api/documents")
+@app.post("/create_document")
 async def create_document(
         title: str = Form(...),
         description: str = Form(...),
